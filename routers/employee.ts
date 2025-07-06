@@ -19,6 +19,9 @@ router.get("/", async (req: Request, res: Response) => {
     });
   } catch (error) {
     console.log(error);
+    res.json({
+      error,
+    });
   }
 });
 
